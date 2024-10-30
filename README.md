@@ -1,0 +1,1 @@
+# install-phpmyadmin-ubuntu24.04

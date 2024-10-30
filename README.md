@@ -72,14 +72,15 @@ Berikut adalah cara install dan Konfigurasi Server Block Nginx untuk phpMyAdmin 
 ### Catatan:
 - Pastikan domain `mydatabase.unisan.ac.id` sudah mengarah ke server Anda dengan mengonfigurasi DNS.
 - Jika Anda menggunakan SSL, tambahkan sertifikat SSL dengan Let's Encrypt atau lainnya.
-#### AAAAA ####
-
-Lanjutkan untuk mengatur ulang phpmyadmin, ketik:
+#
+#### Reconfigure phpmyadmin
+Jika kamu belum dapat login di halaman-web phpmyadmin atau kamu lupa password phpmyadmin, jangan kuatir..., karena ini bisa di reconfigure dengan perintah ini:
 ```code
 dpkg-reconfigure phpmyadmin
 ```
 ubah metode koneksi dari unix sock ke tcp/ip dan atur ulang database phpmyadmin | user | password-nya
-### AAAA ####
+
+### Agar user phpmyadmin bisa create database
 Untuk mengubah user `phpmyadmin` agar bisa diakses dari semua IP address dan memiliki hak untuk membuat database, ikuti langkah-langkah berikut:
 
 ### 1. **Login ke MySQL/MariaDB sebagai Root**
